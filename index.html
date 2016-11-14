@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Node Chat</title>
+    <link rel="stylesheet" href="main.css"> </head>
+
+<body>
+    <div id="content">
+        <h1>Classified NodeChat</h1>
+        <div id="password"> <span id="span1">Password:</span>
+            <input type="password" id="pass-input">
+            <button id="pass-enter">Enter</button>
+        </div>
+        <br>
+        <div id="user" hidden> <span id="span2">My name is:</span>
+            <input id="user-name" disabled>
+            <button id="user-save" disabled>Save</button>
+        </div>
+        <br>
+        <div id="log">
+            <div class="messsage"></div>
+        </div>
+        <br>
+        <div id="controls">
+            <input id="message" disabled>
+            <br>
+            <button id="send" disabled>Send</button>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+    <script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
